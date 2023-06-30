@@ -51,7 +51,7 @@ public class Brewery {
                 .count();
         Worker master = getMaster();
         for (int i = 0; i < numOfHelpers; i++) {
-            Beer beerToAdd = master.makeBeer(beerType, name, alcoholContent);
+            stock.add(master.makeBeer(beerType, name, alcoholContent));
         }
 
     }
